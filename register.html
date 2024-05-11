@@ -3,70 +3,81 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Register</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+    <link rel="manifest" href="img/fav/site.webmanifest">
 </head>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"style="background-color: beige;"> 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo02"  >
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Register <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="C:\Users\HP\Documents\Git hub web ai\ai-first-day-bootstrap-1\login.html">Login</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0" >
-      <input class="form-control mr-sm-2" type="search" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: lightblue;">
+  <div class="container-fluid" style="background-color:lightblue;">
+    <img src="img/fav/favicon-32x32.png" alt="icon">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="register.html">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
   </div>
 </nav>
-  <div class="container-md text-center mt-5 p-5 mb-3 "   style= "width: 500px ; background-color: rgb(4, 187, 238)"><form>
+    
+  
+  <div class="container-md text-center mt-5 p-4 mb-3 "   style= "width: 430px ; background-color: rgb(4, 187, 238)">
+    <form>
      
     
-    <img src="C:\Users\HP\AppData\Local\Temp\9ad604d9-afe7-4ce1-8c52-da5c50e57e35_faviconio-logo.zip.e35\logo.png " alt="" width="100" height="100" align="left">
-    <h1 style="text-align: center">Lets get Registered!</h1><br><br><br>
+    <img src="img/fav/logo/logo.png" width="80" height="80" alt="logo"   align="left">
+    <h2 class=" fw-light mt-2"style="text-align: center" >Lets get Registered!</h2><br>
 
-    <div class="mb-3 ">
+    <div class="mb-3 " style="width:380px;">
     <label for="firstName"> </label>
-    <input type="text" id="firstName" name="firstName" placeholder="First Name"><br><br>
+    <input type="text" class=" text-center form-control" id="firstName" name="firstName" placeholder="First Name"><br>
     
     <label for="lastName"> </label>
-    <input type="text" id="lastName" name="lastName" placeholder="Last Name"><br><br>
+    <input type="text" class=" text-center form-control" id="lastName" name="lastName" placeholder="Last Name"><br>
     
     <label for="salary"> </label>
-    <input type="number" id="salary" name="salary" placeholder="Salary"><br><br>
+    <input type="number"class="  text-center form-control " id="salary" name="salary" placeholder="Salary"><br>
     
     <label for="phone"> </label>
-    <input type="tel" id="phone" name="phone" placeholder="Phone"><br><br>
+    <input type="tel" class="  text-center form-control "id="phone" name="phone" placeholder="Phone"><br>
     
     <label for="dob">Date of Birth:</label>
-    <input type="date" id="dob" name="dob" placeholder="Dob"><br><br>
-    
+    <input type="date" class=" text-center form-control"id="dob" name="dob" placeholder="Dob"><br>
+     
      
     <label for="male">Male:</label>
     <input type="radio" id="male" name="gender" value="male">
     
     <label for="female">Female:</label>
-    <input type="radio" id="female" name="gender" value="female"><br><br>
+    <input type="radio" id="female" name="gender" value="female" checked><br><br>
 
     
     
     <!-- Add more fields for other employee information -->
     
-    <button type="submit"  ;" >Register </button>
+    <input style="background-color:royalblue;color:whitesmoke" class="btn btn-primary fs-8fw-light" type="submit" value="Register">
     </div>
-  </form>
+  
+    </form>
+    
